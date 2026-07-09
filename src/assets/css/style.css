@@ -1,0 +1,190 @@
+<?php
+// =============================================
+// FreshMart Online - CSS Stylesheet
+// =============================================
+
+/* Custom Colors */
+.bg-green {
+    background-color: #2d6a4f !important;
+}
+
+.bg-green-light {
+    background-color: #52b788 !important;
+}
+
+.text-green {
+    color: #2d6a4f !important;
+}
+
+.btn-green {
+    background-color: #40916c;
+    border-color: #40916c;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: #2d6a4f;
+    border-color: #2d6a4f;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #2d6a4f 0%, #52b788 100%);
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Product Card */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card .card-body {
+    padding: 1rem;
+}
+
+.product-card .price {
+    color: #d63384;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.product-card .stock-badge {
+    font-size: 0.75rem;
+}
+
+/* Category Card */
+.category-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    border: 2px solid #e9ecef;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-card:hover {
+    border-color: #40916c;
+    background-color: #f0fdf4;
+    transform: translateY(-3px);
+}
+
+.category-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Dashboard Cards */
+.stat-card {
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-card .icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 2.5rem;
+    opacity: 0.3;
+}
+
+/* Table Styles */
+.table th {
+    background-color: #2d6a4f;
+    color: white;
+    font-weight: 600;
+}
+
+/* Sidebar */
+.sidebar .nav-link {
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: #40916c;
+    color: white;
+}
+
+/* Rating Stars */
+.stars i {
+    color: #ffc107;
+}
+
+/* Status Badges */
+.status-pending { background-color: #ffc107; color: #333; }
+.status-paid { background-color: #0dcaf0; color: #333; }
+.status-confirmed { background-color: #0d6efd; }
+.status-shipped { background-color: #6f42c1; }
+.status-delivered { background-color: #198754; }
+.status-cancelled { background-color: #dc3545; }
+
+/* No Image Placeholder */
+.no-image {
+    width: 100%;
+    height: 200px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 0;
+    }
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    .stat-card h3 {
+        font-size: 1.5rem;
+    }
+}
